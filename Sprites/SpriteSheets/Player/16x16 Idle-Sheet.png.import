@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rsjs0n5yios"
-path="res://.godot/imported/16x16 Idle-Sheet.png-d83d7d92dcc825b8647ae7f7c828e128.ctex"
+path="res://.godot/imported/16x16 Idle-Sheet.png-3dce57be5d43fbfe1d3c3d91b1dd7f72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player/16x16 Idle-Sheet.png"
-dest_files=["res://.godot/imported/16x16 Idle-Sheet.png-d83d7d92dcc825b8647ae7f7c828e128.ctex"]
+source_file="res://Sprites/SpriteSheets/Player/16x16 Idle-Sheet.png"
+dest_files=["res://.godot/imported/16x16 Idle-Sheet.png-3dce57be5d43fbfe1d3c3d91b1dd7f72.ctex"]
 
 [params]
 

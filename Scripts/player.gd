@@ -2,7 +2,11 @@ extends CharacterBody2D
 
 @export var speed: float = 400
 
+# Controls how far in front of the player a cast spell appears
+@export var cast_dist: float = 50
+
 @onready var _animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var _projectile_scene: PackedScene = preload("res://Scenes/projectile.tscn")
 
 var _target: Vector2 = position
 var _anim_dir: float = 0
@@ -10,6 +14,13 @@ var _anim_dir: float = 0
 func _input(event):
 	if event.is_action_pressed(&"click"):
 		_target = get_global_mouse_position()
+	if event.is_action_pressed(&"cast"):
+		var dir = position.direction_to(get_global_mouse_position())
+		var projectile: Projectile = _projectile_scene.instantiate()
+		get_tree().get_current_scene().add_child(projectile)
+		projectile.transform = transform
+		projectile.translate(dir * cast_dist)
+		projectile.launch(dir)
 
 func _process(delta):
 	update_animations()

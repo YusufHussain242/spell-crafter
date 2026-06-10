@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxmmnhucrp5pp"
-path="res://.godot/imported/16x16 Interact-Sheet.png-242a46a5b119ca0b478ebd1d9e18f7a0.ctex"
+uid="uid://c1y447r8ho5ff"
+path="res://.godot/imported/16x16 Attack-Sheet.png-c107c8c28e3c051791cde146e0a654be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player/16x16 Interact-Sheet.png"
-dest_files=["res://.godot/imported/16x16 Interact-Sheet.png-242a46a5b119ca0b478ebd1d9e18f7a0.ctex"]
+source_file="res://Sprites/SpriteSheets/Player/16x16 Attack-Sheet.png"
+dest_files=["res://.godot/imported/16x16 Attack-Sheet.png-c107c8c28e3c051791cde146e0a654be.ctex"]
 
 [params]
 

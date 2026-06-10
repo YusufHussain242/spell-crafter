@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddreqjtspy763"
-path="res://.godot/imported/16x16 Walk-Sheet.png-289c42d5ea17eee0e1e620e4658229a2.ctex"
+uid="uid://b8c5dwia35xry"
+path="res://.godot/imported/16x16 Jump-Sheet.png-e4affc7ee78fabf5ecf3e88a1e1ee454.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player/16x16 Walk-Sheet.png"
-dest_files=["res://.godot/imported/16x16 Walk-Sheet.png-289c42d5ea17eee0e1e620e4658229a2.ctex"]
+source_file="res://Sprites/SpriteSheets/Player/16x16 Jump-Sheet.png"
+dest_files=["res://.godot/imported/16x16 Jump-Sheet.png-e4affc7ee78fabf5ecf3e88a1e1ee454.ctex"]
 
 [params]
 
