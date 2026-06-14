@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b0sd1rnxlqstj"]
+
+[ext_resource type="Script" uid="uid://cn1lfxs8lrujl" path="res://Scripts/projectile.gd" id="1_u5yka"]
+[ext_resource type="Texture2D" uid="uid://c4c6y8ci8mrvq" path="res://Sprites/icon.svg" id="2_0w3a8"]
+[ext_resource type="Script" uid="uid://dwc7yp8p6rkfe" path="res://Scripts/Modifiers/moving_proj_mod.gd" id="3_0le1f"]
+[ext_resource type="Script" uid="uid://bv51g2qn3txic" path="res://Scripts/Modifiers/damaging_proj_mod.gd" id="4_bv6o6"]
+[ext_resource type="Script" uid="uid://upxbpk8gjpx" path="res://Scripts/Modifiers/colliding_proj_mod.gd" id="5_ajddr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6kvm"]
+
+[node name="Projectile" type="CharacterBody2D" unique_id=1426910954]
+script = ExtResource("1_u5yka")
+metadata/_custom_type_script = "uid://cn1lfxs8lrujl"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=623621445]
+shape = SubResource("RectangleShape2D_s6kvm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1987032725]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0w3a8")
+
+[node name="MovingProjMod" type="Node" parent="." unique_id=897634761]
+script = ExtResource("3_0le1f")
+metadata/_custom_type_script = "uid://dwc7yp8p6rkfe"
+
+[node name="DamagingProjMod" type="Node" parent="." unique_id=487019287]
+script = ExtResource("4_bv6o6")
+metadata/_custom_type_script = "uid://bv51g2qn3txic"
+
+[node name="CollidingProjMod" type="Node" parent="." unique_id=1076983602]
+script = ExtResource("5_ajddr")
+metadata/_custom_type_script = "uid://upxbpk8gjpx"

@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var cast_dist: float = 50
 
 @onready var _animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var _projectile_scene: PackedScene = preload("res://Scenes/projectile.tscn")
+@onready var _projectile_scene: PackedScene = preload("res://Scenes/basic_projectile.tscn")
 
 var _target: Vector2 = position
 var _anim_dir: float = 0
@@ -16,11 +16,11 @@ func _input(event):
 		_target = get_global_mouse_position()
 	if event.is_action_pressed(&"cast"):
 		var dir = position.direction_to(get_global_mouse_position())
+		var pos = position + dir * cast_dist
+		
 		var projectile: Projectile = _projectile_scene.instantiate()
 		get_tree().get_current_scene().add_child(projectile)
-		projectile.transform = transform
-		projectile.translate(dir * cast_dist)
-		projectile.launch(dir)
+		projectile.launch(pos, dir)
 
 func _process(delta):
 	update_animations()
