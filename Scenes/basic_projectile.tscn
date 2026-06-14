@@ -2,9 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cn1lfxs8lrujl" path="res://Scripts/projectile.gd" id="1_u5yka"]
 [ext_resource type="Texture2D" uid="uid://c4c6y8ci8mrvq" path="res://Sprites/icon.svg" id="2_0w3a8"]
-[ext_resource type="Script" uid="uid://dwc7yp8p6rkfe" path="res://Scripts/Modifiers/moving_proj_mod.gd" id="3_0le1f"]
-[ext_resource type="Script" uid="uid://bv51g2qn3txic" path="res://Scripts/Modifiers/damaging_proj_mod.gd" id="4_bv6o6"]
-[ext_resource type="Script" uid="uid://upxbpk8gjpx" path="res://Scripts/Modifiers/colliding_proj_mod.gd" id="5_ajddr"]
+[ext_resource type="Script" uid="uid://dwc7yp8p6rkfe" path="res://Scripts/Modifiers/linear_motion_mod.gd" id="3_0le1f"]
+[ext_resource type="Script" uid="uid://c4akw5kpxogd4" path="res://Scripts/Modifiers/standard_movement_mod.gd" id="3_0w3a8"]
+[ext_resource type="Script" uid="uid://bv51g2qn3txic" path="res://Scripts/Modifiers/damage_on_hit_mod.gd" id="4_bv6o6"]
+[ext_resource type="Script" uid="uid://upxbpk8gjpx" path="res://Scripts/Modifiers/volatile_mod.gd" id="5_ajddr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s6kvm"]
 
@@ -19,14 +20,18 @@ shape = SubResource("RectangleShape2D_s6kvm")
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_0w3a8")
 
-[node name="MovingProjMod" type="Node" parent="." unique_id=897634761]
+[node name="StandardMovementMod" type="Node" parent="." unique_id=108680276]
+script = ExtResource("3_0w3a8")
+metadata/_custom_type_script = "uid://c4akw5kpxogd4"
+
+[node name="LinearMotionMod" type="Node" parent="." unique_id=121648448]
 script = ExtResource("3_0le1f")
 metadata/_custom_type_script = "uid://dwc7yp8p6rkfe"
 
-[node name="DamagingProjMod" type="Node" parent="." unique_id=487019287]
+[node name="DamageOnHitMod" type="Node" parent="." unique_id=957360249]
 script = ExtResource("4_bv6o6")
 metadata/_custom_type_script = "uid://bv51g2qn3txic"
 
-[node name="CollidingProjMod" type="Node" parent="." unique_id=1076983602]
+[node name="VolatileMod" type="Node" parent="." unique_id=1179673722]
 script = ExtResource("5_ajddr")
 metadata/_custom_type_script = "uid://upxbpk8gjpx"

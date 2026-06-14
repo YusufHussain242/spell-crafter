@@ -1,4 +1,4 @@
-class_name MovingProjMod
+class_name LinearMotionMod
 extends ProjectileModifier
 
 @export var speed: float = 600
@@ -9,4 +9,3 @@ func _ready() -> void:
 
 func on_launch(pos: Vector2, dir: Vector2) -> void:
 	projectile.velocity = dir * speed
-	print(projectile.velocity)

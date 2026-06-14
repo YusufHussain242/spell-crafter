@@ -1,4 +1,4 @@
-class_name DamagingProjMod
+class_name DamageOnHitMod
 extends ProjectileModifier
 
 @export var damage: float = 10

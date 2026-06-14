@@ -1,4 +1,4 @@
-class_name CollidingProjMod
+class_name VolatileMod
 extends ProjectileModifier
 
 func _ready() -> void:
